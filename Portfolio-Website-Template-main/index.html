@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sagar Dhakal Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Sagar Dhakal</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Sagar Dhakal</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'student  ',
+						'Teacher   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A civil engineering student</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://youtube.com/@learnorbit538?si=b5jR1bqToNWthhrz" class="btn btn-primary py-3 px-4"target="_blank">YouTube</a> 
+							<a href="https://github.com/sagardhkl" class="btn btn-white btn-outline-white py-3 px-4"target="_blank">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p> </p>
+										<p><span class="title-s">Name: </span> <span>Sagar Dhakal</span></p>
+										<!-- <p><span class="title-s">Intern Role: </span> <span>..............</span></p>if you want to add intern -->
+										<p><span class="title-s">Experience: </span> <span>No experience yet</span></p>
+										<p><span class="title-s">Address: </span> <span>Syangja, Nepal</span></p>
+									  </div>
+									</div>
+								  </div>
+								  
+
+								<div class="skill-mf">
+									<p class="title-s"><u>Technical Skills</u></p>
+									<span>Autocad</span> <span class="pull-right">91%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 91%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>sketchup</span> <span class="pull-right">88%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Surveying Techniques</span> <span class="pull-right">93%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 93%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span></span>Structural Analysis Software <span class="pull-right">2%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 2%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Revit</span> <span class="pull-right">1%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 1%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Etabs + Safe</span> <span class="pull-right">1%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 1%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<p class="title-s"><u>soft skills</u></p>
+									<ul>
+										<li>Team Collaboration</li>
+										<li>Critical Thinking</li>
+										<li>Leadership and Communication</li>
+										<li>Problem-Solving</li>
+										<li>Time Management</li>
+										<li>Attention to Detail</li>
+									</ul>									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>
+									I’m Sagar Dhakal, a civil engineering student dedicated to developing sustainable infrastructure and promoting renewable energy solutions. 
+									My academic experience has strengthened my skills in structural analysis and project management. 
+									Beyond my studies, I’ve provided personalized tutoring and mathematics instruction at different training institutions for British Gurkha Army applicants.
+								</p>
+								<p>
+									I value teamwork and effective communication, believing they are essential for successful collaboration. 
+									I actively seek projects that enhance community resilience and sustainability. 
+									Outside of my studies, I enjoy exploring new technologies and participating in workshops. 
+									I’m committed to making a positive impact through sustainable design.
+								</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Civil Engineering Undergraduate</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Civil Engineering(3rd year running)</span></li>
+									<li class="d-flex"><span>Language:</span> <span> Nepali, English</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Excel, Estimation and Costing, Site Supervision &amp; GIS (Geographic Information System)</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Teaching, Traveling, Watching Movies</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<!-- write your linked in adress here  -->
+								<p><a href="https://www.linkedin.com/in/dhakalsagar" class="btn btn-primary py-3 px-3"target="_blank">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Ambitious Civil Engineering Student with a strong foundation in structural analysis, construction estimation, and sustainable design. Passionate about leveraging engineering principles to develop innovative infrastructure solutions and enhance community resilience.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<!-- <div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-Present</span>
+						<h2>your post there </h2>
+						<span class="position">company name</span>
+						<p class="mt-4">write a simple description here. 
+							<ul>
+								more description here.
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">from this date to that date</span>
+						<h2>post there </h2>
+						<span class="position">company name there </span>
+						<p class="mt-4">your text here. 
+							<ul>
+								more description here 
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div> -->
+			<br><br><br><br>
+			<!-- delete this br br br br code after uncommenting the code above -->
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2079-20..</span>
+    					<h2>Bachelor of Civil Engineering</h2>
+    					<span class="position">Paschimanchal Campus (IOE) 
+							<p>Tribhuwan University </p>
+						</span>
+						<p class="mt-4">Grade: .............</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2077-2078</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Shree Amar Singh Secondary School</span>
+    					<p class="mt-4">Grade: A+.</p>
+    				</div>
+				</div>
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2066-2076</span>
+    					<h2>Secondary School</h2>
+    					<span class="position">Syangja Secondary School</span>
+    					<p class="mt-4">Grade: A+.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>The following projects showcase my skills and dedication to innovative, sustainable solutions in civil engineering.</p>
+			
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://docs.google.com/presentation/d/1rPX_QJ851jgCeHVVR8tFOlr9DEr-On4X/edit?usp=sharing&ouid=105666273500690223415&rtpof=true&sd=true" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://docs.google.com/presentation/d/1rPX_QJ851jgCeHVVR8tFOlr9DEr-On4X/edit?usp=sharing&ouid=105666273500690223415&rtpof=true&sd=true" target="_blank">Aggregate mechanical Properties vs Concrete Performance</a></h3>
+                <p>Study of how the mechanical characteristics of aggregates affect concrete strength and performance..</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">	
+          	<div class="blog-entry justify-content-end">
+              <a href="https://drive.google.com/file/d/10GLbubxSCpTyK_PEAMW4YW8TL6ib6w8B/view?usp=sharing" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://drive.google.com/file/d/10GLbubxSCpTyK_PEAMW4YW8TL6ib6w8B/view?usp=sharing" target="blank">AI-Generated Sustainable Smart City in the Himalayas</a></h3>
+                <p>A futuristic eco-city featuring solar-powered buildings, autonomous transport, and green urban design set beneath majestic Himalayan peaks.				</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://drive.google.com/drive/folders/17Jkcf_iXlklCeSZZeyouxgP4ufrnE8c4?usp=sharing" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://drive.google.com/drive/folders/17Jkcf_iXlklCeSZZeyouxgP4ufrnE8c4?usp=sharing" target="_blank">Class 11 Science Notes</a></h3>
+                <p>I created these Class 11 Physics notes to help students learn and understand concepts more easily.
+				</p>
+              </div>
+            </div>
+          </div>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 16px; color: #fff; font-family: 'Poppins', system-ui, sans-serif;">
+  
+  <style>
+    /* Styles are scoped to the section for easier copy-paste */
+    .viewer-card-local {
+      position: relative;
+      background-color: #111;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .viewer-card-local:hover {
+      transform: translateY(-5px);
+    }
+
+    .viewer-container-local {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0;
+      overflow: hidden;
+      /* Cursor is now default/pointer depending on what's active inside */
+    }
+
+    .viewer-placeholder-local {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: opacity 0.3s;
+    }
+    
+    /* Removed the previous #viewer-overlay to clean the interface */
+
+    .viewer-footer-local {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      opacity: 0.8;
+      font-size: 12px;
+      color: white;
+      font-family: Arial;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .btn-yellow-local { /* Custom class for the trigger button */
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #FFC035;
+      color: #000;
+      font-weight: 600;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn-yellow-local:hover {
+      background-color: #e0a92e;
+    }
+  </style>
+
+  <h2 style="margin-bottom: 16px; font-weight: 600;">
+    Interactive 3D View of my House Designed in SketchUp
+  </h2>
+
+  <div class="viewer-card-local">
+    <div id="dynamic-viewer-container" class="viewer-container-local">
+      
+<img src="images/house-preview.jpg" alt="House model placeholder" class="viewer-placeholder-local">      
+      <div class="viewer-footer-local">
+        © Sagar 2025 – View Only
+      </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <p style="color: #ccc; font-size: 0.9rem; line-height: 1.4;">
+        A charming traditional house crafted from stone, mud, cement, and wood, showcasing rustic elegance and timeless architectural style.
+      </p>
+      
+      <button onclick="load3DViewerSection(event)" class="btn-yellow-local" id="load-3d-button">
+        Click to View 3D Model
+      </button>
+      
+    </div>
+  </div>
+</section>
+
+<script>
+  function load3DViewerSection(event) {
+    // Prevent the button's default action (if it were a form submit or a link)
+    event.preventDefault(); 
+    
+    const viewerContainer = document.getElementById("dynamic-viewer-container");
+    const loadButton = document.getElementById("load-3d-button");
+
+    // 1. The full, original Trimble Connect embed URL
+    const embedUrl = "https://web.connect.trimble.com/projects/HhXTmFY3KCs/viewer/3d/?modelId=0bmZrutsdAk&=&origin=app31.connect.trimble.com&stoken=kzHl8UIS06he4Jg2mhgDGJ0nVsbTqcpgg-sSkvP1MpHrAZ8ryb_0rfFSK1iVV5PH";
+
+    // 2. Change button text while loading
+    loadButton.innerText = "Loading 3D Viewer...";
+    loadButton.disabled = true;
+
+    // 3. Insert the iframe, replacing the placeholder content
+    viewerContainer.innerHTML = `
+      <iframe src="${embedUrl}"
+              title="Interactive 3D Model"
+              style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+              allowfullscreen
+              loading="eager"></iframe>
+      
+      <div class="viewer-footer-local">
+        © Sagar 2025 – View Only
+      </div>
+    `;
+
+    // 4. Optionally hide the button after loading starts (or keep it if you change its function)
+    loadButton.style.display = 'none'; 
+  }
+</script>
+
+
+
+        </div>
+	<!-- <br> -->
+		<!-- added justify-content-center to center align the last two projects -->
+		 <!-- (to add more projects just uncommnet this code below and do whatever u want )
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div> -->
+    <!-- </section> -->
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Syangja, Nepal</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">9840394172</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:dhakalsagar538@gmail.com	">dhakalsagar538@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/W6SzdGEGT2YUSoph7" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://youtube.com/@learnorbit538?si=b5jR1bqToNWthhrz"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/dhakalsagar"><span class="icon-linkedin"></span></a></li>  
+					  <!-- <li class="ftco-animate"><a href="your twitter account"><span class="icon-twitter"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100048771136249&mibextid=ZbWKwL"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/sagar_dhkl/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+<footer>
+  <p style="all: unset; display: block; font-size: 12px; color: #888; text-align: center; margin-top: 20px;">
+    © <script>document.write(new Date().getFullYear());</script> Template originally by 
+    <a href="https://colorlib.com" target="_blank" style="all: unset; color: #888; text-decoration: underline; cursor: pointer;">Colorlib</a>
+  </p>
+</footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
